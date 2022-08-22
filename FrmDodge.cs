@@ -16,6 +16,7 @@ namespace DodgeGame
          // declare space for an array of 7 objects called planet 
         Planet[] planet = new Planet[7];
         Random yspeed = new Random();
+        Spaceship spaceship = new Spaceship();
 
 
         public FrmDodge()
@@ -42,6 +43,7 @@ namespace DodgeGame
                 planet[i].y += rndmspeed;
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].DrawPlanet(g);
+                spaceship.DrawSpaceship(g);
             }
 
 
